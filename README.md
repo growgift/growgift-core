@@ -6,7 +6,7 @@ Give a share, grow a future. Fractional stock shares as physical gifts: a box ar
 
 ```bash
 # 1. Infrastructure (Postgres + Redis + Kafka)
-docker compose -f infra/docker/docker-compose.yml up -d
+docker compose -p growgift -f infra/docker/docker-compose.yml up -d
 
 # 2. Backend (any service; Gifting shown)
 export GG_CODE_PEPPER=dev-pepper-change-me
@@ -19,13 +19,15 @@ cd frontend && npm install && npm run dev   # http://localhost:3000
 
 The compose file boots Postgres with `infra/docker/init.sql`, which creates one least-privilege role and schema per service plus append-only audit tables. To reset a broken local DB: `docker compose -f infra/docker/docker-compose.yml down -v && docker compose -f infra/docker/docker-compose.yml up -d`.
 
+Full step-by-step instructions, including every environment variable: `docs/GrowGift-Local-Setup-Guide.md`.
+
 ## Layout
 
 - `backend/` — .NET 9 solution: 7 services + YARP gateway, Clean Architecture folders per service, CQRS via MediatR, transactional outbox → Kafka, xUnit domain tests
 - `frontend/` — Next.js 15, Tailwind, "Evergreen & Ribbon" design system
-- `mobile/` — Expo skeleton (QR scan → redeem)
+- `mobile/` — older Expo skeleton, unused. The iOS and Android app is the `growgift-mobile` repository
 - `infra/` — docker compose, kustomize base, Terraform skeleton
-- `docs/architecture.md` — full architecture, event flows, security model, and an honest implemented-vs-scaffolded ledger
+- `docs/` — documentation index in `docs/README.md`; architecture in `docs/growgift-dotnet-architecture.md`
 
 ## Environment secrets (never committed)
 

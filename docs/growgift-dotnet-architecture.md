@@ -1,6 +1,6 @@
 # GrowGift .NET Platform Architecture
 
-*Generated from the `growgift-core` code on the `develop` branch (all branches were identical when written). This replaces the earlier summary in `architecture.md` where they differ.*
+*Generated from the `growgift-core` code on the `develop` branch (all branches were identical when written). This is the single architecture document; the older `architecture.md` has been merged into it and removed.*
 
 ## 1. What the platform does
 
@@ -37,6 +37,15 @@ Supporting infrastructure: PostgreSQL 16 (one database `growgift`, one schema an
 | `/api/v1/shipments/*`, `/api/v1/shipping/*` | Fulfillment |
 | `/api/v1/onboarding/*`, `/portfolio`, `/trading/*` | Brokerage |
 
+## 3a. Clients
+
+| Client | Repository | State |
+|---|---|---|
+| Website | `growgift-core/frontend` (Next.js 15, React 19, Tailwind 3) | Implemented |
+| Mobile app (iOS and Android) | `growgift/growgift-mobile` (Expo, React Native) | Implemented v1, not yet tested on devices. The `mobile/` folder in this repository is an older skeleton and is not used. |
+
+Both clients call the same gateway and the same `/api/v1` endpoints. Shared business rules live in `frontend/lib` and are copied into the mobile repository under CI drift protection (see that repository's `docs/WEB_MOBILE_SYNC.md`).
+
 ## 4. Main flows
 
 ### 4.1 Buy a gift
@@ -55,17 +64,32 @@ Supporting infrastructure: PostgreSQL 16 (one database `growgift`, one schema an
 ### 4.3 Buy and sell shares
 `POST /api/v1/trading/orders` with `{side, symbol, quantity}` and an `Idempotency-Key`. Brokerage maps the user to their ViewTrade user, opens a session (access token, impersonation, Watchman token, SSO) and places the order on the Trading host. Sells are re-checked against live holdings and sent as dollar (Notional, DAY) orders. See `docs/TRADING.md`.
 
+**Price note.** Because the purchase happens at redemption, the recipient receives whatever quantity the gifted dollars buy that day. The gift is a fixed dollar amount, not a fixed number of shares. An omnibus acquisition path (`AcquireForOmnibusAsync`, `OmnibusLot`) still exists behind the provider port but is not used in this model (see ADR-0001).
+
 ### 4.4 Family
 A verified parent creates children (read-only child logins), adds a partner and creates chores. Approving a chore pays the reward into the child's wallet, split across the Short-Term (1 year), Medium-Term (3 years) and Long-Term (10 years) jars; remainders are allocated deterministically so the ledger always sums exactly.
 
 ### 4.5 Subscription
 Parents and recipients add a card at registration (valid for at least 6 months). Nothing is charged for 3 months from that user's registration; then a monthly charge applies (price lives in the Stripe Price). If a subscription lapses, only new gift purchases and new family features are blocked (HTTP 402); sign-in, redeeming, viewing and selling are never blocked. See the Stripe Integration Guide.
 
+### 4.6 Personas and identity checks
+
+| Persona | Role value | Signup collects | Identity check (KYC) | Notes |
+|---|---|---|---|---|
+| Buyer | `Buyer` | Name, shipping address, e-mail, password | Not required | Never opens a brokerage account |
+| Recipient | `Recipient` | E-mail, password | Required before redeeming (`kyc_status=approved` and a `viewtrade_account` claim) | Kept separate from Buyer so the role alone says who someone is |
+| Parent | `Parent` | E-mail, password | Handled by the same onboarding as recipients | The `Parent` policy checks the `parent` role claim |
+| Child | `Child` | Created by a parent (login code and PIN) | None | Read-only: every mutating endpoint rejects child tokens |
+| Admin | `Admin` | Operator accounts | n/a | Required for shipping admin endpoints (`ShippingAdmin` policy) |
+
+The shipping address is saved with `PUT /api/v1/auth/me/shipping-address`. The token carries a `has_shipping_address` claim, so Gifting can reject a physical-box order before payment starts without calling Identity.
+
 ## 5. Events and reliability
 
 - **Outbox:** each of Identity, Gifting, Brokerage and Family has an `outbox_messages` table; a relay publishes to Kafka. Topics are chosen by an explicit event-domain attribute.
 - **Idempotency:** Redis claims on write endpoints and on every consumed event; broker-side client references (`gg-gift-<giftId>`).
 - **No blind retries on money paths:** a timed-out or unreadable order or shipment create is marked uncertain and reconciled, never resent.
+- **Event names:** topics follow `growgift.<domain>.<event-name>.v<N>` and the domain comes from an explicit `[EventDomain]` attribute. See `EVENT-CATALOG.md`.
 - **Audit:** an append-only, hash-chained `audit_log` per schema, protected by a trigger that rejects UPDATE and DELETE.
 
 ## 6. Security model
@@ -75,6 +99,10 @@ Parents and recipients add a card at registration (valid for at least 6 months).
 - Secrets only from environment variables (never committed or logged): `GG_JWT_PRIVATE_KEY_PEM`, `GG_CODE_PEPPER`, `STRIPE_*`, `VIEWTRADE_*`, `SHIPPIT_*`, `SENDGRID_API_KEY`, `INTERNAL_SERVICE_KEY`.
 - ViewTrade tokens and session ids stay inside Brokerage. Shippit is restricted to staging by code.
 - Webhooks are verified (Stripe signature; Shippit header token) and protected against replay.
+- Redemption codes are stored only as peppered hashes (`GG_CODE_PEPPER`, with `GG_CODE_PEPPER_PREVIOUS` for rotation).
+- Containers run as non-root with a read-only root filesystem and all Linux capabilities dropped (Kubernetes base manifests).
+- Card data never touches GrowGift (Stripe-hosted pages), which keeps the card-data scope small. Confirm the exact PCI DSS scope with your payment adviser.
+- See `SECURITY-AND-COMPLIANCE.md` and `DATA-PROTECTION.md` for the full picture.
 
 ## 7. Repository layout
 
@@ -97,6 +125,6 @@ docs/      this documentation
 | Subscription (Stripe Billing) | Implemented; Stripe adapter was written without being run against Stripe |
 | Notifications | Verification and receipt e-mails implemented; other messages are scaffolds |
 | Terraform, Kubernetes | Skeleton |
-| Mobile | Skeleton |
+| Mobile | Implemented in `growgift-mobile` (v1); the `mobile/` folder here is an unused skeleton |
 
 Open items: choose how child holdings are modelled with ViewTrade (parent account versus separate child account); confirm the sell and sell-all request shape with ViewTrade; run Stripe Billing in test mode before launch.
