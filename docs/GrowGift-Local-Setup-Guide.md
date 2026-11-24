@@ -275,7 +275,9 @@ cd backend && ./run-all.sh          # terminal 1
 cd frontend && npm run dev          # terminal 2
 
 # Stop
-# Ctrl+C in both terminals, then:
+# Ctrl+C in both terminals. If any backend process is left running:
+pkill -f "dotnet run"
+# then:
 docker-compose -p growgift -f infra/docker/docker-compose.yml stop   # keeps data
 # `down` removes containers; add -v to also wipe data
 ```
