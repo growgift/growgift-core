@@ -1,0 +1,36 @@
+# macOS
+.DS_Store
+
+# .NET build output
+bin/
+obj/
+*.user
+*.suo
+.vs/
+TestResults/
+
+# Logs
+logs/
+*.log
+
+# Node / frontend
+node_modules/
+dist/
+build/
+.expo/
+.next/
+
+# IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+
+# Secrets / local config
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+appsettings.*.local.json
+secrets.json

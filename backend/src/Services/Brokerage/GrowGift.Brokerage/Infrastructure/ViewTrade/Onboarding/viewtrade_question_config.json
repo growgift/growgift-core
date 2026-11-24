@@ -1,0 +1,1887 @@
+[
+  {
+    "question_id": 27128,
+    "system_identifier": "application.acknowledgment.tax-form-information",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3002,
+    "section_name": "Account Type",
+    "question_label": "Tax form information",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27053,
+        "label": "As a withholding agent, ViewTrade Securities is required by federal tax law to collect information through IRS Form W-9 or W-8 series. While we do not provide tax, legal or accounting advice, we include some helpful information along the way. We encourage you to contact a tax professional with questions, and to review the IRS instructions to Form W-9 and Form W8-BEN on irs.gov. You can also copy and paste https://bit.ly/vt-w9 for Form W-9 instructions and https://bit.ly/vt-w8ben for Form W-8BEN instructions."
+      }
+    ]
+  },
+  {
+    "question_id": 27129,
+    "system_identifier": "application.customer.type",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3002,
+    "section_name": "Account Type",
+    "question_label": "Customer type",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27054,
+        "label": "Individual"
+      }
+    ]
+  },
+  {
+    "question_id": 27130,
+    "system_identifier": "application.account.type",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3002,
+    "section_name": "Account Type",
+    "question_label": "Account Type",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27055,
+        "label": "Cash"
+      }
+    ]
+  },
+  {
+    "question_id": 27131,
+    "system_identifier": "applicant.primary.name.first",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "First name",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27132,
+    "system_identifier": "applicant.primary.name.middle",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Middle Name (if you have one)",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27133,
+    "system_identifier": "applicant.primary.name.last",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Last name",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27134,
+    "system_identifier": "applicant.primary.dob",
+    "type_id": 15,
+    "type_name": "date",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Date of birth",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27135,
+    "system_identifier": "applicant.primary.phone.type",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Please indicate phone number(s) you can provide",
+    "is_optional": false,
+    "multiple_answers": true,
+    "options": [
+      {
+        "option_id": 27056,
+        "label": "Home phone"
+      },
+      {
+        "option_id": 27057,
+        "label": "Mobile phone"
+      }
+    ]
+  },
+  {
+    "question_id": 27136,
+    "system_identifier": "applicant.primary.phone.home",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Home phone number",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27137,
+    "system_identifier": "applicant.primary.phone.mobile",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Mobile phone",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27138,
+    "system_identifier": "applicant.primary.email.personal",
+    "type_id": 2,
+    "type_name": "email",
+    "section_id": 3003,
+    "section_name": "Identification of Beneficial Owner. Must match legal documents.",
+    "question_label": "Email address",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27139,
+    "system_identifier": "applicant.primary.citizenship.country.us",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Are you a US citizen or a US resident alien?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27058,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27059,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27140,
+    "system_identifier": "applicant.primary.citizenship.country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "What is your country of citizenship?",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27141,
+    "system_identifier": "applicant.primary.birth-country.country.us",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Were you born in the USA?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27060,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27061,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27142,
+    "system_identifier": "applicant.primary.birth-country.country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "In what country were you born?",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27143,
+    "system_identifier": "applicant.primary.renounced-us-citizenship",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Have you formally renounced your US citizenship?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27062,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27144,
+    "system_identifier": "applicant.primary.renounced-us-citizenship.document",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Please provide PDF document of renunciation of you US citizenship.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27145,
+    "system_identifier": "applicant.primary.subject-to-us-taxation",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Are you presently subject to taxation in the United States as a US citizen or resident alien?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27063,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27064,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27146,
+    "system_identifier": "applicant.primary.not-usa.usa-phone.explanation",
+    "type_id": 7,
+    "type_name": "textarea",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "If all of the phone numbers provided in this application are US-based, please explain the reason. This is considered US indicia.",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27147,
+    "system_identifier": "applicant.primary.subject-to-us-taxation.explanation",
+    "type_id": 7,
+    "type_name": "textarea",
+    "section_id": 3004,
+    "section_name": "US Indicia",
+    "question_label": "Please explain why you are subject to US taxation and contact customer service so we can review your application.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27148,
+    "system_identifier": "applicant.primary.address.home.country.us",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Is your current permanent address in the United States?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27065,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27066,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27149,
+    "system_identifier": "applicant.primary.address.home.country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Select a Country of your Permanent Residence",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27150,
+    "system_identifier": "applicant.primary.address.home.line.1",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 1",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27151,
+    "system_identifier": "applicant.primary.address.home.line.2",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 2",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27152,
+    "system_identifier": "applicant.primary.address.home.line.3",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 3",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27153,
+    "system_identifier": "applicant.primary.address.home.city",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "City or Town",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27154,
+    "system_identifier": "applicant.primary.address.home.region",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Province/Region",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27155,
+    "system_identifier": "applicant.primary.address.home.state",
+    "type_id": 14,
+    "type_name": "state",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Select a State",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27156,
+    "system_identifier": "applicant.primary.address.home.zip",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Zip/Postal Code",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27157,
+    "system_identifier": "applicant.primary.address.home.country.us.explainer",
+    "type_id": 7,
+    "type_name": "textarea",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Please explain the reason for your permanent US address. This question is for US tax purposes.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27158,
+    "system_identifier": "applicant.primary.address.mailing.same-as-home",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Is your mailing address the same as your home address?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27067,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27068,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27159,
+    "system_identifier": "applicant.primary.address.mailing.country.us",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Is your current mailing address in the United States?",
+    "is_optional": true,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27069,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27070,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27160,
+    "system_identifier": "applicant.primary.address.mailing.country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Select a Country",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27161,
+    "system_identifier": "applicant.primary.address.mailing.line.1",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 1",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27162,
+    "system_identifier": "applicant.primary.address.mailing.line.2",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 2",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27163,
+    "system_identifier": "applicant.primary.address.mailing.line.3",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Address Line 3",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27164,
+    "system_identifier": "applicant.primary.address.mailing.city",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "City or Town",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27165,
+    "system_identifier": "applicant.primary.address.mailing.region",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Province/Region",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27166,
+    "system_identifier": "applicant.primary.address.mailing.state",
+    "type_id": 14,
+    "type_name": "state",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Select a State",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27167,
+    "system_identifier": "applicant.primary.address.mailing.zip",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Zip/Postal Code",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27168,
+    "system_identifier": "applicant.primary.address.mailing.country.us.explainer",
+    "type_id": 7,
+    "type_name": "textarea",
+    "section_id": 3005,
+    "section_name": "Address",
+    "question_label": "Please explain the reason for your US mailing address. This question is for US tax purposes.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27169,
+    "system_identifier": "applicant.primary.document.id.social-security-card.number",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3006,
+    "section_name": "US Tax ID Number",
+    "question_label": "US Tax Identification Number (SSN or other)",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27170,
+    "system_identifier": "applicant.primary.has-ssn",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3006,
+    "section_name": "US Tax ID Number",
+    "question_label": "Do you have a US Tax ID Number (SSN or Other)",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27071,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27072,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27171,
+    "system_identifier": "applicant.primary.document.id.social-security-card.number",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3006,
+    "section_name": "US Tax ID Number",
+    "question_label": "US Tax Identification Number (SSN or other)",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27172,
+    "system_identifier": "applicant.primary.employment.status",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3007,
+    "section_name": "Employment",
+    "question_label": "What is your employment status?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27073,
+        "label": "Employed"
+      },
+      {
+        "option_id": 27074,
+        "label": "Unemployed"
+      },
+      {
+        "option_id": 27075,
+        "label": "Retired"
+      },
+      {
+        "option_id": 27076,
+        "label": "Student"
+      }
+    ]
+  },
+  {
+    "question_id": 27173,
+    "system_identifier": "applicant.primary.employment.income.source.not-employed",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3007,
+    "section_name": "Employment",
+    "question_label": "Source of income",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27174,
+    "system_identifier": "applicant.primary.employment.employer",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3007,
+    "section_name": "Employment",
+    "question_label": "Employer",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27175,
+    "system_identifier": "applicant.primary.employment.source-of-funds",
+    "type_id": 8,
+    "type_name": "select",
+    "section_id": 3007,
+    "section_name": "Employment",
+    "question_label": "Source of funds",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27077,
+        "label": "Savings"
+      },
+      {
+        "option_id": 27078,
+        "label": "Investments"
+      }
+    ]
+  },
+  {
+    "question_id": 27176,
+    "system_identifier": "applicant.primary.w8.treaty-country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3008,
+    "section_name": "Claim of Tax Treaty Benefits",
+    "question_label": "I certify that the beneficial owner is a resident of the country selected below within the meaning of the income tax treaty between the United States and that country.",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27177,
+    "system_identifier": "applicant.primary.w8.ftin.not-required",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3008,
+    "section_name": "Claim of Tax Treaty Benefits",
+    "question_label": "Are you legally required to obtain a Foreign TIN in your country?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27079,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27080,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27178,
+    "system_identifier": "applicant.primary.w8.ftin",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3008,
+    "section_name": "Claim of Tax Treaty Benefits",
+    "question_label": "Foreign Tax ID Number",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27239,
+    "system_identifier": "applicant.primary.document.id.national.number",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3008,
+    "section_name": null,
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 29485,
+    "system_identifier": "applicant.primary.w8.special-rate.applicable",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3008,
+    "section_name": "Claim of Tax Treaty Benefits",
+    "question_label": "*Do special rates and conditions apply to you?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 30112,
+        "label": "Yes"
+      },
+      {
+        "option_id": 30113,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27179,
+    "system_identifier": "applicant.primary.w8.certification",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3009,
+    "section_name": "Substitute Form W8-BEN Certification",
+    "question_label": "Your electronic signature will be treated as an acceptance of the information provided or confirmed and constitutes a legally binding digital signature.\n\nThe Internal Revenue Service does not require your consent to any provisions of this document other than the certifications required to establish your status as a non-U.S. individual and, if applicable, obtain a reduced rate of withholding.\n___________________________________\n\nUnder penalties of perjury, I declare that I have examined the information on this form and to the best of my knowledge and belief it is true, correct, and complete. I further certify under penalties of perjury that:\n- I am the individual that is the beneficial owner (or am authorized to sign for the individual that is the beneficial owner) of all the income or proceeds to which this form\nrelates or am using this form to document myself for chapter 4 purposes;\n- The person named on line 1 of this form is not a U.S. person;\n- This form relates to:\n(a) income not effectively connected with the conduct of a trade or business in the United States;\n(b) income effectively connected with the conduct of a trade or business in the United States but is not subject to tax under an applicable income tax treaty;\n(c) the partner's share of a partnership's effectively connected taxable income; or\n(d) the partner's amount realized from the transfer of a partnership interest subject to withholding under section 1446(f);\n- The person named on line 1 of this form is a resident of the treaty country listed on line 9 of the form (if any) within the meaning of the income tax treaty between the United States and that country; and\n- For broker transactions or barter exchanges, the beneficial owner is an exempt foreign person as defined in the instructions.\n\nFurthermore, I authorize this form to be provided to any withholding agent that has control, receipt, or custody of the income of which I am the beneficial owner or any withholding agent that can disburse or make payments of the income of which I am the beneficial owner. I agree that I will submit a new form within 30 days if any certification made on this form becomes incorrect.",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27081,
+        "label": "I certify that I have the capacity to sign for the beneficial owner in this application."
+      }
+    ]
+  },
+  {
+    "question_id": 27180,
+    "system_identifier": "applicant.primary.w8.signature",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3009,
+    "section_name": "Substitute Form W8-BEN Certification",
+    "question_label": "Signature of beneficial owner (or individual authorized to sign for beneficial owner)",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27181,
+    "system_identifier": "applicant.primary.w9.exemption.list",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3010,
+    "section_name": "Substitute Form W9 Certification",
+    "question_label": "Substitute W9 Certification",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27082,
+        "label": "Under penalties of perjury, I certify that: (1) The number shown on this form is my correct taxpayer identification number (or I am waiting for a number to be issued to me), and (2) I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am no longer subject to backup withholding, and (3) I am a U.S. citizen or other U.S. person (defined below), and (4) the FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct.\n\nDefinition of a U.S. person. For federal tax return purposes, you are considered a U.S. person if you are: An individual who is a U.S. citizen or U.S. resident alien, A partnership, corporation, company, or association created or organized in the United States or under the laws of the United States, an estate (other than a foreign estate), or a domestic trust (as defined in Regulations section 301.7701-7).\n\nThe Internal Revenue Service does not require your consent to any provisions of this document other than the certifications required to avoid backup withholding."
+      }
+    ]
+  },
+  {
+    "question_id": 27182,
+    "system_identifier": "applicant.primary.w9.signature",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3010,
+    "section_name": "Substitute Form W9 Certification",
+    "question_label": "Signature of U.S. person in this application",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27183,
+    "system_identifier": "application.suitability.investment.objective",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Investment Objective",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27083,
+        "label": "Capital Preservation"
+      },
+      {
+        "option_id": 27084,
+        "label": "Income"
+      },
+      {
+        "option_id": 27085,
+        "label": "Growth"
+      },
+      {
+        "option_id": 27086,
+        "label": "Speculation"
+      },
+      {
+        "option_id": 27087,
+        "label": "Growth Income"
+      },
+      {
+        "option_id": 27088,
+        "label": "Maximum Growth"
+      },
+      {
+        "option_id": 27089,
+        "label": "Balanced"
+      },
+      {
+        "option_id": 27090,
+        "label": "Other"
+      }
+    ]
+  },
+  {
+    "question_id": 27184,
+    "system_identifier": "application.suitability.investment.objective.2",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Secondary Investment Objective",
+    "is_optional": true,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27091,
+        "label": "Capital Preservation"
+      },
+      {
+        "option_id": 27092,
+        "label": "Income"
+      },
+      {
+        "option_id": 27093,
+        "label": "Growth"
+      },
+      {
+        "option_id": 27094,
+        "label": "Speculation"
+      },
+      {
+        "option_id": 27095,
+        "label": "Growth Income"
+      },
+      {
+        "option_id": 27096,
+        "label": "Maximum Growth"
+      },
+      {
+        "option_id": 27097,
+        "label": "Balanced"
+      },
+      {
+        "option_id": 27098,
+        "label": "Other"
+      }
+    ]
+  },
+  {
+    "question_id": 27185,
+    "system_identifier": "application.suitability.annual-income",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Annual income",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27099,
+        "label": "Under $25000"
+      },
+      {
+        "option_id": 27100,
+        "label": "$25001 to 50000"
+      },
+      {
+        "option_id": 27101,
+        "label": "50001 to 100000"
+      },
+      {
+        "option_id": 27102,
+        "label": "100001 to 200000"
+      },
+      {
+        "option_id": 27103,
+        "label": "200001 to 300000"
+      },
+      {
+        "option_id": 27104,
+        "label": "300001 to 500000"
+      },
+      {
+        "option_id": 27105,
+        "label": "500001 to 1200001"
+      },
+      {
+        "option_id": 27106,
+        "label": "Over 1200001"
+      }
+    ]
+  },
+  {
+    "question_id": 27186,
+    "system_identifier": "application.suitability.net-worth.liquid",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Liquid net worth (excluding primary residence)",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27107,
+        "label": "Under $50000"
+      },
+      {
+        "option_id": 27108,
+        "label": "$50001 to $100000"
+      },
+      {
+        "option_id": 27109,
+        "label": "$100001 to $200000"
+      },
+      {
+        "option_id": 27110,
+        "label": "$200001 to $500000"
+      },
+      {
+        "option_id": 27111,
+        "label": "$500001 to $1000000"
+      },
+      {
+        "option_id": 27112,
+        "label": "$1000001 to $5000000"
+      },
+      {
+        "option_id": 27113,
+        "label": "Over $5000001"
+      }
+    ]
+  },
+  {
+    "question_id": 27187,
+    "system_identifier": "application.suitability.net-worth.total",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Total Net Worth",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27114,
+        "label": "Under $50000"
+      },
+      {
+        "option_id": 27115,
+        "label": "$50001 to $100000"
+      },
+      {
+        "option_id": 27116,
+        "label": "$100001 to $200000"
+      },
+      {
+        "option_id": 27117,
+        "label": "$200001 to $500000"
+      },
+      {
+        "option_id": 27118,
+        "label": "$500001 to $1000000"
+      },
+      {
+        "option_id": 27119,
+        "label": "$1000001 to $5000000"
+      },
+      {
+        "option_id": 27120,
+        "label": "Over $5000001"
+      }
+    ]
+  },
+  {
+    "question_id": 27188,
+    "system_identifier": "application.suitability.risk-tolerance",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Risk tolerance",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27121,
+        "label": "Low"
+      },
+      {
+        "option_id": 27122,
+        "label": "Medium"
+      },
+      {
+        "option_id": 27123,
+        "label": "High"
+      }
+    ]
+  },
+  {
+    "question_id": 27189,
+    "system_identifier": "application.suitability.liquidity",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Liquidity Needs",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27124,
+        "label": "Very Important"
+      },
+      {
+        "option_id": 27125,
+        "label": "Somewhat Important"
+      },
+      {
+        "option_id": 27126,
+        "label": "Not Important"
+      }
+    ]
+  },
+  {
+    "question_id": 27190,
+    "system_identifier": "application.suitability.time-horizon",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Time Horizon",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27127,
+        "label": "Short (Less than 3 Years)"
+      },
+      {
+        "option_id": 27128,
+        "label": "Average (4-7 Years)"
+      },
+      {
+        "option_id": 27129,
+        "label": "Long (8 Years+)"
+      }
+    ]
+  },
+  {
+    "question_id": 27191,
+    "system_identifier": "application.suitability.investment.experience",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3011,
+    "section_name": "Investment Profile",
+    "question_label": "Investment Experience",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27130,
+        "label": "None"
+      },
+      {
+        "option_id": 27131,
+        "label": "Limited"
+      },
+      {
+        "option_id": 27132,
+        "label": "Good"
+      },
+      {
+        "option_id": 27133,
+        "label": "Extensive"
+      }
+    ]
+  },
+  {
+    "question_id": 27192,
+    "system_identifier": "application.info.domestic-or-foreign",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Please confirm type of account you are opening",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27134,
+        "label": "Domestic"
+      },
+      {
+        "option_id": 27135,
+        "label": "Foreign"
+      }
+    ]
+  },
+  {
+    "question_id": 27193,
+    "system_identifier": "applicant.primary.politically-exposed",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Is the account maintained for a current or former politically exposed person or public official?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27136,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27137,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27194,
+    "system_identifier": "applicant.primary.politically-exposed.name-of-official-and-relatives",
+    "type_id": 7,
+    "type_name": "textarea",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "If yes, please provide the names of that official and official's immediate family members.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27195,
+    "system_identifier": "applicant.primary.politically-exposed.political-organization",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Please provide the name of the related political organization.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27196,
+    "system_identifier": "applicant.primary.control-person",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Is the account holder a control person of a publicly traded company? (Director, Officer, or 10% Stock Holder)",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27138,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27139,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27197,
+    "system_identifier": "applicant.primary.control-person.company-name",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Please list the name of the company(s) and the stock ticker symbol.",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27198,
+    "system_identifier": "applicant.primary.affiliated-with-member-firm",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Are you, or anyone authorized to trade in your account, affiliated with or work with or work for a member firm of a stock exchange or FINRA?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27140,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27141,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27199,
+    "system_identifier": "applicant.primary.affiliated-with-member-firm.firm.name",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Name of firm",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27200,
+    "system_identifier": "application.trading-authorization",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Have you granted trading authorization to another party",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27142,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27143,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27201,
+    "system_identifier": "application.trading-authorization.agent",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Name of agent",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27202,
+    "system_identifier": "application.trusted-contact.opt-in",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Do you want to add trusted contact information?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27144,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27145,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27203,
+    "system_identifier": "application.trading-authorization",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3012,
+    "section_name": "Disclosures",
+    "question_label": "Have you granted trading authorization to another party",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27146,
+        "label": "No"
+      }
+    ]
+  },
+  {
+    "question_id": 27204,
+    "system_identifier": "application.trusted-contact.name.first",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3013,
+    "section_name": "Trusted Contact",
+    "question_label": "First name",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27205,
+    "system_identifier": "application.trusted-contact.name.last",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3013,
+    "section_name": "Trusted Contact",
+    "question_label": "Last name",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27206,
+    "system_identifier": "application.trusted-contact.phone",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3013,
+    "section_name": "Trusted Contact",
+    "question_label": "Phone number",
+    "is_optional": true,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27207,
+    "system_identifier": "application.trusted-contact.email",
+    "type_id": 2,
+    "type_name": "email",
+    "section_id": 3013,
+    "section_name": "Trusted Contact",
+    "question_label": "Email address",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27208,
+    "system_identifier": "application.edocs.tax.form",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3014,
+    "section_name": "Delivery Preferences",
+    "question_label": "I consent to electronic delivery of the tax forms.",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27147,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27209,
+    "system_identifier": "application.edocs.confirmations.opt-in",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3014,
+    "section_name": "Delivery Preferences",
+    "question_label": "Would you like receive your trade confirmations electronically?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27148,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27210,
+    "system_identifier": "application.edocs.statements.opt-in",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3014,
+    "section_name": "Delivery Preferences",
+    "question_label": "Would you like to receive your monthly account statements electronically?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27149,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27211,
+    "system_identifier": "application.edocs.proxies.opt-in",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3014,
+    "section_name": "Delivery Preferences",
+    "question_label": "Would you like to receive your proxies electronically?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27150,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27212,
+    "system_identifier": "application.edocs.prospectus.opt-in",
+    "type_id": 1,
+    "type_name": "checkbox",
+    "section_id": 3014,
+    "section_name": "Delivery Preferences",
+    "question_label": "Would you like to receive your prospectuses electronically?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27151,
+        "label": "Yes"
+      }
+    ]
+  },
+  {
+    "question_id": 27217,
+    "system_identifier": "application.acknowledgment.crs-regbi",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27156,
+        "label": "I agree"
+      },
+      {
+        "option_id": 27156,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27218,
+    "system_identifier": "application.legalese.agreement.utp",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27157,
+        "label": "I agree"
+      },
+      {
+        "option_id": 27157,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27219,
+    "system_identifier": "application.legalese.cta.exhibit-b",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27158,
+        "label": "I agree"
+      },
+      {
+        "option_id": 27158,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27220,
+    "system_identifier": "application.legalese.client.disclosure.annual",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27159,
+        "label": "I agree"
+      },
+      {
+        "option_id": 27159,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27231,
+    "system_identifier": "application.legalese.form-a2",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27169,
+        "label": "I hereby declare under oath, that the information provided is true and correct, being in force and valid, until it is not otherwise revoked or modified by a written instrument."
+      },
+      {
+        "option_id": 27169,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27232,
+    "system_identifier": "application.legalese.client.fintech-fees",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27170,
+        "label": "I agree"
+      },
+      {
+        "option_id": 27170,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 30330,
+    "system_identifier": "application.legalese.disclosure.other",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3015,
+    "section_name": "Acknowledgements",
+    "question_label": null,
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 30847,
+        "label": "agree"
+      }
+    ]
+  },
+  {
+    "question_id": 27221,
+    "system_identifier": "applicant.primary.document.id.type",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Type of ID document you are uploading",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27160,
+        "label": "Driver's License"
+      },
+      {
+        "option_id": 27161,
+        "label": "Passport"
+      },
+      {
+        "option_id": 27162,
+        "label": "Identification Card"
+      },
+      {
+        "option_id": 27160,
+        "label": "license"
+      },
+      {
+        "option_id": 27161,
+        "label": "passport"
+      },
+      {
+        "option_id": 27162,
+        "label": "identificationCard"
+      }
+    ]
+  },
+  {
+    "question_id": 27222,
+    "system_identifier": "applicant.primary.document.id.photo-id.front.image",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Photo ID Front",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27223,
+    "system_identifier": "applicant.primary.document.id.photo-id.back.image",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Photo ID Back",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27224,
+    "system_identifier": "applicant.primary.document.id.photo-id.contains-address",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Does your Photo ID include your current address?",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27163,
+        "label": "Yes"
+      },
+      {
+        "option_id": 27164,
+        "label": "No"
+      },
+      {
+        "option_id": 27163,
+        "label": "yes"
+      },
+      {
+        "option_id": 27164,
+        "label": "no"
+      }
+    ]
+  },
+  {
+    "question_id": 27225,
+    "system_identifier": "applicant.primary.document.address.front.image",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Proof-of-address document",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27241,
+    "system_identifier": "applicant.primary.document.country",
+    "type_id": 13,
+    "type_name": "country",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "ID Document Country of Issue",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27242,
+    "system_identifier": "applicant.primary.document.id.number",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3016,
+    "section_name": "Documents",
+    "question_label": "Document Number",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27228,
+    "system_identifier": "application.legalese.signature.agreement",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3018,
+    "section_name": "Signatures",
+    "question_label": "I authorize my Carrying Firm to obtain a consumer report at the time of application to verify my creditworthiness and to obtain a consumer report from time to time for updates, renewals, extensions, and collection activity on any approved account. Upon my written request, my Carrying Firm will disclose to me whether it obtained a report, and if so, the name and address of the consumer-reporting agency that provided it. In the event that my account is denied by Carrying Firm, as a result of the consumer report verification, I authorize Carrying Firm to provide to my broker the reason(s) for such denial. BY SIGNING THIS APPLICATION, I ACKNOWLEDGE THE FOLLOWING: (1) THAT, PAGE 4 PARAGRAPH 10 OF THE CUSTOMER ACCOUNT AGREEMENT CONTAINS A PREDISPUTE ARBITRATION CLAUSE AND IN ACCORDANCE WITH THIS AGREEMENT I (WE) AGREE IN ADVANCE TO ARBITRATE ANY CONTROVERSIES WHICH MAY ARISE BETWEEN OR AMONG ME (US) AND MY CARRYING FIRM, (2) RECEIPT OF A COPY OF THE CUSTOMER ACCOUNT AGREEMENT FOLLOWING THIS APPLICATION AND MY (OUR) AGREEMENT WITH THE TERMS THEREIN AND (3) THE INFORMATION PROVIDED ABOVE IS ACCURATE. # Customer Account Agreement This Customer Account Agreement (the \"Agreement\") sets forth the respective rights and obligations of ViewTrade Securities, Inc. (\"ViewTrade\") and the customer(s) identified on the New Account Application (the \"Customer\") in connection with the Customer's brokerage account with ViewTrade (\"the Account\"). The Customer hereby agrees as follows with respect to the Account, which the Customer has established with ViewTrade for the purchase, sale or carrying of securities or contracts relating thereto and/or the borrowing of funds, which transactions are cleared through Apex Clearing Corporation. To help the government fight the funding of terrorism and money laundering, Federal law requires all financial institutions to obtain, verify, and record information that identifies each person who opens an account. In order to open an account, the Customer will provide information that will allow ViewTrade to identify the Customer including, but not limited to, the Customer's name, address, date of birth, and the Customer's driver's license or other identifying documents. 1. Applicable Rules and Regulations. All transactions for the Account shall be subject to the constitution, rules, regulations, customs and usages of the exchange or market and its clearing house, if any, upon which such transactions are executed, except as otherwise specifically provided in this Agreement. 2. Definitions. \"Obligations\" means all indebtedness, debit balances, liabilities, or other obligations of any kind of the Customer to ViewTrade, whether now existing or hereafter arising. \"Securities and other property\" shall include, but shall not be limited to, money, securities, commodities or other property of every kind and nature and all contracts and options relating thereto, whether for present or future delivery. 3. Investment Objective Definitions. \"Capital Preservation\" - a conservative investment strategy characterized by a desire to avoid risk of loss; \"Income\" - strategy focused on current income rather than capital appreciation; \"Growth\" - investing in stocks with strong earnings and/or revenue growth or potential; \"Speculation\" - taking larger risks, usually by frequent trading, with hope of higher than-average gain. All strategies involve various types and levels of risk, the most common of which are market, credit, inflation, business, and interest rate. 4. Breach; Security Interest. Whenever in ViewTrade's discretion ViewTrade considers it necessary for ViewTrade's protection, or for the protection of the ViewTrade or in the event of, but not limited to; (i) any breach by the Customer of this or any other agreement with ViewTrade or (ii) the Customer's failure to pay for securities and other property purchased or to deliver securities and other property sold, ViewTrade may sell any or all securities and other property held in any of the Customer's accounts (either individually or jointly with others), cancel or complete any open orders for the purchase or sale of any securities and other property, and/or borrow or buy-in any securities and other property required to make delivery against any sale, including a short sale, effected for the Customer, all without notice or demand for deposit of collateral, other notice of sale or purchase, or other notice or advertisement, each of which is expressly waived by the Customer, and/or ViewTrade may require the Customer to deposit cash or adequate collateral to the Customer's account prior to any settlement date in order to assure the performance or payment of any open contractual commitments and/or unsettled transactions. ViewTrade has the right to refuse to execute securities transactions for the Customer at any time and for any reason. Any and all securities and other property belonging to the Customer or in which the Customer may have an interest held by ViewTrade or carried in any of the Customer's accounts with ViewTrade (either individually or jointly with others) shall be subject to a first and prior security interest and lien for the discharge of the Customer's obligations to ViewTrade, wherever or however arising and without regard to whether or not ViewTrade has made advances with respect to such securities and other property, and ViewTrade is hereby authorized to sell and/or purchase any and all securities and other property in any of the Customer's accounts, and/or to transfer any such securities and other property among any of the Customer's accounts to the fullest extent of the law and without notice where allowed. The losses, costs and expenses, including but not limited to reasonable attorneys' fees and expenses, incurred and payable or paid by ViewTrade in the (i) collection of a debit balance and/or any unpaid deficiency in the accounts of the Customer with ViewTrade or (ii) defense of any matter arising out of the Customer's securities transactions, shall be payable to ViewTrade by the Customer. The Customer understands that because of circumstances beyond broker-dealers control, its customers' voting rights may be impaired. For example, if the stock of a company that another customer has purchased has not yet been received from the seller(s), then other customers' abilities to vote that company's stock could be impaired until those shares are received. In addition, if the stock of a company that the Customer has purchased has not yet been received from the seller(s), then payments received by the Customer from ViewTrade, in lieu of the dividends on that stock not yet received, may receive tax treatment less favorable than that accorded to dividends. 5. Cancellation. ViewTrade is authorized, in ViewTrade's discretion, should ViewTrade for any reason whatsoever deem it necessary for ViewTrade's protection, without notice, to cancel any outstanding order, to close out the accounts of the Customer, in whole or in part, or to close out any commitment made on behalf of the Customer. 6. Payment of Indebtedness Upon Demand. The Customer shall at all times be liable for the payment upon demand of any obligations owing from the Customer to ViewTrade, and the Customer shall be liable to ViewTrade for any deficiency remaining in any such accounts in the event of the liquidation thereof (as contemplated in Paragraph 4 of this Agreement or otherwise), in whole or in part, by ViewTrade or by the Customer; and the Customer shall make payment of such obligations upon demand. 7. Communications. ViewTrade may send communications to the Customer at the Customer's address on the New Account Application or at such other address as the Customer may hereafter give ViewTrade in writing, and all communications so sent, whether by mail, electronic mail, or otherwise, shall be deemed given to the Customer personally, whether actually received or not. Reports of execution of orders and statements of accounts of the Customer shall be conclusive if not objected to in writing, the former within five (5) days and the latter within ten (10) days. In consideration of ViewTrade sending any mail to me in care of a Post Office Box Address or a third party, I hereby agree that \"all correspondence of any nature whatsoever\" sent to me in such address will have the same force and effect as if it had been delivered to me personally. 8. ARBITRATION AGREEMENT. THIS AGREEMENT CONTAINS A PREDISPUTE ARBITRATION CLAUSE. BY SIGNING AN ARBITRATION AGREEMENT THE PARTIES AGREE AS FOLLOWS: a. ALL PARTIES TO THIS AGREEMENT ARE GIVING UP THE RIGHT TO SUE EACH OTHER IN COURT, INCLUDING THE RIGHT TO A TRIAL BY JURY EXCEPT AS PROVIDED BY THE RULES OF THE ARBITRATION FORM IN WHICH A CLAIM IS FILED; b. ARBITRATION AWARDS ARE GENERALLY FINAL AND BINDING; A PARTY'S ABILITY TO HAVE A COURT REVERSE OR MODIFY AN ARBITRATION AWARD IS VERY LIMITED. c. THE ABILITY OF THE PARTIES TO OBTAIN DOCUMENTS, WITNESS STATEMENTS AND OTHER DISCOVERY IS GENERALLY MORE LIMITED IN ARBITRATION THAN IN COURT PROCEEDINGS; d. THE ARBITRATORS DO NOT HAVE TO EXPLAIN THE REASON(S) FOR THEIR AWARD UNLESS, IN AN ELIGIBLE CASE, A JOINT REQUEST FOR AN EXPLAINED DECISION HAS BEEN SUBMITTED BY ALL PARTIES TO THE PANEL AT LEAST 20 DAYS PRIOR TO THE FIRST SCHEDULED HEARING DATE. e. THE PANEL OF ARBITRATORS MAY INCLUDE A MINORITY OF ARBITRATORS WHO WERE OR ARE AFFILIATED WITH THE SECURITIES INDUSTRY. f. THE RULES OF SOME ARBITRATION FORUMS MAY IMPOSE TIME LIMITS FOR BRINGING A CLAIM IN ARBITRATION. IN SOME CASES, A CLAIM THAT IS INELIGIBLE FOR ARBITRATION MAY BE BROUGHT IN COURT. g. THE RULES OF THE ARBITRATION FORUM IN WHICH THE CLAIM IS FILED, AND ANY AMENDMENTS THERETO, SHALL BE INCORPORATED INTO THIS AGREEMENT. THE FOLLOWING ARBITRATION AGREEMENT SHOULD BE READ IN CONJUNCTION WITH THE DISCLOSURES ABOVE. ANY AND ALL CONTROVERSIES, DISPUTES OR CLAIMS BETWEEN THE CUSTOMER AND VIEWTRADE, OR THE AGENTS, REPRESENTATIVES, EMPLOYEES, DIRECTORS, OFFICERS OR CONTROL PERSONS OF VIEWTRADE, ARISING OUT OF, IN CONNECTION WITH, FROM OR WITH RESPECT TO (a) ANY PROVISIONS OF OR THE VALIDITY OF THIS AGREEMENT OR ANY RELATED AGREEMENTS, (b) THE RELATIONSHIP OF THE PARTIES HERETO, OR (c) ANY CONTROVERSY ARISING OUT OF VIEWTRADE'S BUSINESS, OR THE CUSTOMER'S ACCOUNTS, SHALL BE CONDUCTED PURSUANT TO THE CODE OF ARBITRATION PROCEDURE OF THE FINANCIAL INDUSTRY REGULATORY AUTHORITY (\"FINRA\"). THE DECISION AND AWARD OF THE ARBITRATOR(S) SHALL BE CONCLUSIVE AND BINDING UPON ALL PARTIES, AND ANY JUDGMENT UPON ANY AWARD RENDERED MAY BE ENTERED IN A COURT HAVING JURISDICTION THEREOF, AND NEITHER PARTY SHALL OPPOSE SUCH ENTRY. No person shall bring a putative or certified class action to arbitration, nor seek to enforce any pre-dispute arbitration agreement against any person who has initiated in court a putative class action; or who is a member of a putative class who has not opted out of the class with respect to any claims encompassed by the putative class action until: (i) the class certification is denied; or (ii) the class is de-certified; or (iii) the customer is excluded from the class by the court. Such forbearance to enforce an agreement to arbitrate shall not constitute a waiver of any rights under this agreement except to the extent stated herein. 11. Representations. The Customer represents that the Customer is of majority age. The Customer represents either that the Customer is not an employee of any exchange, or of any corporation of which any exchange owns a majority of the capital stock, or of a member of any exchange, or of a member firm or member corporation registered on any exchange or of a bank, trust company, insurance company or of any corporation, firm or individual engaged in the business dealing either as broker or as principal in securities, bills of exchange, acceptances or other forms of commercial paper, or alternatively, that the Customer has obtained and will provide to ViewTrade additional documentation which may include information required under FINRA Rule 3210(407) from its employer authorizing the Customer to open and maintain an account with ViewTrade. If the Customer is a corporation, partnership, trust or other entity, the Customer represents that its governing instruments permit this Agreement, that this Agreement has been authorized by all applicable persons and that the signatory on the New Account Application is authorized to bind the Customer. The Customer represents that the Customer shall comply with all applicable laws, rules and regulations in connection with the Customer's account. The Customer further represents that no one except the Customer has an interest in the account or accounts of the Customer with ViewTrade. 12. Joint Accounts. If the New Account Application indicates that the Account shall consist of more than one person, the Customer's obligations under this Agreement shall be joint and several. References to the \"Customer\" shall include each of the customers identified on the New Account Application. ViewTrade may rely on transfer or other instructions from any one of the Customers in a joint account, and such instructions shall be binding on each of the Customers. ViewTrade may deliver securities or other property to, and send confirmations; notices, statements, and communications of every kind, to any one of the Customers, and such action shall be binding on each of the Customers. Notwithstanding the foregoing, ViewTrade is authorized in ViewTrade's discretion to require joint action by the joint tenants with respect to any matter concerning the joint account, including but not limited to the giving or cancellation of orders and the withdrawal of money or securities. In the case of Tenants by the Entirety accounts, joint action will be required for all matters concerning the joint account. Tenants by Entirety is not recognized in certain jurisdictions, and, where not expressly allowed, will not be a permitted designation of the account. 13. Other Agreements. If the Customer trades any options, the Customer agrees to be bound by the terms of ViewTrade Customer Option Agreement. The Customer understands that copies of these agreements are available from ViewTrade and, to the extent applicable, are incorporated by reference herein. The terms of these other agreements are in addition to the provisions of this Agreement and any other written agreements between ViewTrade and the Customer. 14. Data Not Guaranteed. The Customer expressly agrees that any data or online reports is provided to the Customer without warranties of any kind, express or implied, including but not limited to, the implied warranties of merchantability, fitness of a particular purpose or non-infringement. The Customer acknowledges that the information contained in any reports provided by ViewTrade is obtained from sources believed to be reliable but is not guaranteed as to its accuracy of completeness. Such information could include technical or other inaccuracies, errors, or omissions. In no event shall ViewTrade or any of ViewTrade's affiliates be liable to the Customer or any third party for the accuracy, timeliness, or completeness of any information made available to the Customer or for any decision made or taken by the Customer in reliance upon such information. In no event shall ViewTrade or ViewTrade's affiliated entities be liable for any special incidental, indirect or consequential damages whatsoever, including, without limitation, those resulting from loss of use, data or profits, whether or not advised of the possibility of damages, and on any theory of liability, arising out of or in connection with the use of any reports provided by ViewTrade or with the delay or inability to use such reports. 15. Payment for Order Flow Disclosure. Depending on the security traded and absent specific direction from the Customer, equity and option orders are routed to market centers (i.e., broker-dealers, primary exchanges or electronic communication networks) for execution. Routing decisions are based on a number of factors including the size of the order, the opportunity for price improvement and the quality of order executions, and decisions are regularly reviewed to ensure the duty of best execution is met. ViewTrade may receive compensation or other consideration for the placing of orders with market centers for execution. The amount of the compensation depends on the agreement reached with each venue. The source and nature of compensation relating to the Customer's transactions will be furnished upon written request. 16. Credit Check. ViewTrade is authorized, in ViewTrade's discretion, should ViewTrade for any reason deem it necessary for ViewTrade's protection to request and obtain a consumer credit report for the Customer. 17. Miscellaneous. If any provision of this Agreement is held to be invalid or unenforceable, it shall not affect any other provision of this Agreement. The headings of each section of this Agreement are descriptive only and do not modify or qualify any provision of this Agreement. This Agreement and its enforcement shall be governed by the laws of the state of Florida and shall cover individually and collectively all accounts which the Customer has previously opened, now has open or may open or reopen with ViewTrade, and any and all previous, current and future transactions in such accounts. Except as provided in this Agreement, no provision of this Agreement may be altered, modified or amended unless in writing and signed by ViewTrade's authorized representative. This Agreement and all provisions shall inure to the benefit of ViewTrade and ViewTrade's successors, whether by merger, consolidation or otherwise, ViewTrade's assigns, and all other persons specified in Paragraph 8. ViewTrade shall not be liable for losses caused directly or indirectly by any events beyond ViewTrade's reasonable control, including without limitation, government restrictions, exchange or market rulings, suspension of trading or unusually heavy trading in securities, a general change in economic, political or financial conditions, war or strikes. ViewTrade may transfer the accounts of the Customer to ViewTrade's successors and assigns. This Agreement shall be binding upon the Customer and the heirs, executors, administrators, successors and assigns of the Customer. Failure to insist on strict compliance with this Agreement is not considered a waiver of ViewTrade's rights under this Agreement. At ViewTrade's discretion, ViewTrade may terminate this Agreement at anytime on notice to the Customer, the Customer will continue to be responsible for any obligation incurred by the Customer prior to termination. The Customer may not assign the Customer's rights or delegate the Customer's obligations under this Agreement, in whole or in part, without ViewTrade's prior consent. 18. SIPC Protection. As a member of the Securities Investor Protection Corporation (SIPC), funds are available to meet customer claims up to a ceiling of $500,000, including a maximum of $250,000 for cash claims. For additional information regarding SIPC coverage, including a brochure, please contact SIPC at (202) 371-8300 or visit www.sipc.org. 19. TAX TREATY ELIGIBILITY- This agreement shall serve as the Customer's certification that ViewTrade is eligible to receive tax treaty benefits between the country of residence indicated on the new account form and the country(ies) of origin holding jurisdiction over the instruments held within the customer's account. 20. Sweep Program. If the Customer elects to participate in a sweep program, the Customer acknowledges and agrees that: (a) the Customer has read and understands the sweep program terms and conditions; (b) ViewTrade may make changes to ViewTrade's sweep programs and products at any time, in ViewTrade's sole discretion and with or without notice to Customer; (c) the free credit balances in the Customer's Account may begin being included in the sweep program upon Account opening; and (d) ViewTrade has no obligation to monitor the applicable sweep program elected for the Customer's Account or to make recommendations about, or changes to, the sweep program that might be beneficial to the Customer.",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27167,
+        "label": "I agree to the above and electronically sign the agreement"
+      }
+    ]
+  },
+  {
+    "question_id": 27229,
+    "system_identifier": "application.legalese.signature.agreement.tax",
+    "type_id": 9,
+    "type_name": "agreement",
+    "section_id": 3018,
+    "section_name": "Signatures",
+    "question_label": "Under penalties of perjury, I certify that:\n1.The number shown on this form is my correct taxpayer identification number (or I am waiting for a number to be issued to me); and\n2.I am not subject to backup withholding because: (a) I am exempt from backup withholding, or (b) I have not been notified by the Internal Revenue Service (IRS) that I am subject to backup withholding as a result of a failure to report all interest or dividends, or (c) the IRS has notified me that I am no longer subject to backup withholding; and\n3. I am a U.S. citizen or other U.S. person (defined below); and\n4. The FATCA code(s) entered on this form (if any) indicating that I am exempt from FATCA reporting is correct",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 27168,
+        "label": "I provide my consent to sign electronically"
+      }
+    ]
+  },
+  {
+    "question_id": 27230,
+    "system_identifier": "applicant.primary.document.signature.image",
+    "type_id": 3,
+    "type_name": "file",
+    "section_id": 3018,
+    "section_name": "Signatures",
+    "question_label": "Signature",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27603,
+    "system_identifier": "application.fdd.deposit.initial.type",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Initial deposit type",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27604,
+    "system_identifier": "application.fdd.deposit.initial.value",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Value of initial deposit (in USD)",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27605,
+    "system_identifier": "application.fdd.withdrawal.expected",
+    "type_id": 8,
+    "type_name": "select",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Frequency of expected withdrawals",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 28277,
+        "label": "FREQUENT"
+      },
+      {
+        "option_id": 28278,
+        "label": "OCCASIONAL"
+      },
+      {
+        "option_id": 28279,
+        "label": "RARE"
+      }
+    ]
+  },
+  {
+    "question_id": 27606,
+    "system_identifier": "application.fdd.business-nature",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Nature of your business",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27607,
+    "system_identifier": "application.fdd.activity-type",
+    "type_id": 8,
+    "type_name": "select",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Type of Account Activity",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 28280,
+        "label": "ACTIVE_TRADING"
+      },
+      {
+        "option_id": 28281,
+        "label": "LONG_TERM_INVESTING"
+      },
+      {
+        "option_id": 28282,
+        "label": "SHORT_TERM_INVESTING"
+      }
+    ]
+  },
+  {
+    "question_id": 27608,
+    "system_identifier": "application.fdd.referred.to-broker",
+    "type_id": 5,
+    "type_name": "radio",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Referred to broker",
+    "is_optional": false,
+    "multiple_answers": false,
+    "options": [
+      {
+        "option_id": 28283,
+        "label": "yes"
+      },
+      {
+        "option_id": 28284,
+        "label": "no"
+      }
+    ]
+  },
+  {
+    "question_id": 27609,
+    "system_identifier": "application.fdd.contact.initial",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Initial Contact",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27610,
+    "system_identifier": "application.fdd.referred.name.full",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Referred Name",
+    "is_optional": false,
+    "multiple_answers": false
+  },
+  {
+    "question_id": 27611,
+    "system_identifier": "application.fdd.referred.relationship",
+    "type_id": 6,
+    "type_name": "text",
+    "section_id": 3055,
+    "section_name": "Foreign Due Diligence",
+    "question_label": "Referred Relationship",
+    "is_optional": false,
+    "multiple_answers": false
+  }
+]

@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fulfillment
+  namespace: growgift
+  labels: { app: fulfillment, part-of: growgift }
+spec:
+  replicas: 2
+  selector:
+    matchLabels: { app: fulfillment }
+  template:
+    metadata:
+      labels: { app: fulfillment, part-of: growgift }
+    spec:
+      securityContext:
+        runAsNonRoot: true
+        seccompProfile: { type: RuntimeDefault }
+      containers:
+        - name: fulfillment
+          image: ghcr.io/growgift/fulfillment:latest # pinned by CI to the git SHA
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - configMapRef: { name: growgift-config }
+            - secretRef: { name: growgift-secrets }
+          securityContext:
+            allowPrivilegeEscalation: false
+            readOnlyRootFilesystem: true
+            capabilities: { drop: ["ALL"] }
+          resources:
+            requests: { cpu: 100m, memory: 256Mi }
+            limits: { cpu: "1", memory: 512Mi }
+          readinessProbe:
+            httpGet: { path: /healthz, port: 8080 }
+            initialDelaySeconds: 5
+            periodSeconds: 10
+          livenessProbe:
+            httpGet: { path: /healthz, port: 8080 }
+            initialDelaySeconds: 15
+            periodSeconds: 20
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: fulfillment
+  namespace: growgift
+spec:
+  selector: { app: fulfillment }
+  ports:
+    - port: 80
+      targetPort: 8080

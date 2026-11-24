@@ -1,0 +1,36 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.SharedKernel", "src\BuildingBlocks\GrowGift.SharedKernel\GrowGift.SharedKernel.csproj", "{A1000000-0000-0000-0000-000000000001}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Contracts", "src\BuildingBlocks\GrowGift.Contracts\GrowGift.Contracts.csproj", "{A1000000-0000-0000-0000-000000000002}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Infrastructure.Common", "src\BuildingBlocks\GrowGift.Infrastructure.Common\GrowGift.Infrastructure.Common.csproj", "{A1000000-0000-0000-0000-000000000003}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Identity", "src\Services\Identity\GrowGift.Identity\GrowGift.Identity.csproj", "{A1000000-0000-0000-0000-000000000004}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Catalog", "src\Services\Catalog\GrowGift.Catalog\GrowGift.Catalog.csproj", "{A1000000-0000-0000-0000-000000000005}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Gifting", "src\Services\Gifting\GrowGift.Gifting\GrowGift.Gifting.csproj", "{A1000000-0000-0000-0000-000000000006}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Brokerage", "src\Services\Brokerage\GrowGift.Brokerage\GrowGift.Brokerage.csproj", "{A1000000-0000-0000-0000-000000000007}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Family", "src\Services\Family\GrowGift.Family\GrowGift.Family.csproj", "{A1000000-0000-0000-0000-000000000008}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Fulfillment", "src\Services\Fulfillment\GrowGift.Fulfillment\GrowGift.Fulfillment.csproj", "{A1000000-0000-0000-0000-000000000009}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Notifications", "src\Services\Notifications\GrowGift.Notifications\GrowGift.Notifications.csproj", "{A1000000-0000-0000-0000-00000000000A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Gateway", "src\Gateway\GrowGift.Gateway\GrowGift.Gateway.csproj", "{A1000000-0000-0000-0000-00000000000B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Domain.Tests", "tests\GrowGift.Domain.Tests\GrowGift.Domain.Tests.csproj", "{A1000000-0000-0000-0000-00000000000C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Brokerage.Tests", "tests\GrowGift.Brokerage.Tests\GrowGift.Brokerage.Tests.csproj", "{A1000000-0000-0000-0000-00000000000D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrowGift.Fulfillment.Tests", "tests\GrowGift.Fulfillment.Tests\GrowGift.Fulfillment.Tests.csproj", "{A1000000-0000-0000-0000-00000000000E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+EndGlobal

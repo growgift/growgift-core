@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "GrowGift",
+    "slug": "growgift",
+    "scheme": "growgift",
+    "orientation": "portrait",
+    "ios": { "bundleIdentifier": "com.growgift.app" },
+    "android": { "package": "com.growgift.app" },
+    "plugins": ["expo-router", ["expo-camera", { "cameraPermission": "GrowGift uses the camera to scan gift box QR codes." }]]
+  }
+}

@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: growgift-config
+  namespace: growgift
+data:
+  ASPNETCORE_URLS: "http://0.0.0.0:8080"
+  Kafka__BootstrapServers: "kafka.growgift-infra.svc.cluster.local:9092"
+  OTEL_EXPORTER_OTLP_ENDPOINT: "http://otel-collector.observability.svc.cluster.local:4317"
+---
+# Placeholder ONLY — real values are injected by External Secrets Operator
+# from AWS Secrets Manager. Never commit real secrets.
+apiVersion: v1
+kind: Secret
+metadata:
+  name: growgift-secrets
+  namespace: growgift
+type: Opaque
+stringData:
+  GG_CODE_PEPPER: "replace-via-external-secrets"
+  STRIPE_WEBHOOK_SECRET: "replace-via-external-secrets"

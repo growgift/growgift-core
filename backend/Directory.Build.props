@@ -1,0 +1,8 @@
+<Project>
+  <!-- Applies to every project in backend/. Projects target net9.0; this lets
+       them run on a newer major runtime (e.g. a machine with only .NET 10
+       installed) instead of failing with "install or update .NET". -->
+  <PropertyGroup>
+    <RollForward>Major</RollForward>
+  </PropertyGroup>
+</Project>

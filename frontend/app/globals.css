@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --ink: #12291f;
+  --canvas: #f6fbf4;
+  --leaf: #2f8f5b;
+  --leaf-deep: #1f6b42;
+  --ribbon: #f2a93b;
+  --mint: #bfe3d2;
+}
+
+body {
+  background: var(--canvas);
+  color: var(--ink);
+}
+
+::selection {
+  background: var(--ribbon);
+  color: var(--ink);
+}
+
+/* --- Redemption ticket ---------------------------------------------------
+   The signature component: a gift-tag ticket with a perforated tear line.
+   Perforation is drawn with a dashed border + punched semicircles that
+   inherit the page background. */
+.ticket {
+  position: relative;
+  background: white;
+  border: 1.5px solid var(--ink);
+  border-radius: 18px;
+  box-shadow: 0 12px 32px -16px rgba(18, 41, 31, 0.35);
+}
+
+.ticket-perf {
+  position: relative;
+  border-top: 2px dashed rgba(18, 41, 31, 0.35);
+}
+
+.ticket-perf::before,
+.ticket-perf::after {
+  content: "";
+  position: absolute;
+  top: -13px;
+  width: 26px;
+  height: 26px;
+  border-radius: 9999px;
+  background: var(--canvas);
+  border: 1.5px solid var(--ink);
+}
+
+.ticket-perf::before {
+  left: -14px;
+  clip-path: inset(0 0 0 50%);
+  border-left-color: transparent;
+}
+
+.ticket-perf::after {
+  right: -14px;
+  clip-path: inset(0 50% 0 0);
+  border-right-color: transparent;
+}
+
+/* Subtle paper grain for hero surfaces */
+.grain {
+  background-image: radial-gradient(rgba(18, 41, 31, 0.06) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+/* Focus visibility (WCAG) */
+:focus-visible {
+  outline: 3px solid var(--ribbon);
+  outline-offset: 2px;
+}
